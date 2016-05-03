@@ -1,7 +1,7 @@
 {
-  "name": "plover-module-template",
+  "name": "plover-assets-less",
   "version": "1.0.0",
-  "description": "请输入关于此模块的介绍",
+  "description": "plover plugin for compile less css",
   "main": "lib/index",
   "scripts": {
     "lint": "eslint lib test",
@@ -15,6 +15,10 @@
     "lib"
   ],
   "dependencies": {
+    "less": "~2.6.1",
+    "less-plugin-functions": "0.0.2",
+    "lodash": "~4.11.2",
+    "plover-logger": "~1.3.1"
   },
   "devDependencies": {
     "conventional-changelog-cli": "~1.1.1",
@@ -24,14 +28,18 @@
     "mocha": "~2.4.5",
     "should": "~8.3.1"
   },
+  "plover": {
+    "plugin": "lib/plugin.js",
+    "buildPlugin": "lib/builder.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plover-modules/plover.git"
+    "url": "git+https://github.com/plover-modules/plover-assets-less.git"
   },
   "author": "bencode@163.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/plover-modules/plover/issues"
+    "url": "https://github.com/plover-modules/plover-assets-less/issues"
   },
-  "homepage": "https://github.com/plover-modules/plover#readme"
+  "homepage": "https://github.com/plover-modules/plover-assets-less#readme"
 }
