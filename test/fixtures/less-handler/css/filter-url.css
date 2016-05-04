@@ -1,0 +1,6 @@
+@import "/g/hummer-theme/css/button.css";
+@import "/g/normalize.css/normalize.css";
+body{background:url(/g/less-test/img/bg.png)}
+.segment{background:url(http://plover.com/g/lib/test.png)}
+.footer{background:url(/g/lib/b.png)}
+
