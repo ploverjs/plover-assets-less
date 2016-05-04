@@ -9,6 +9,12 @@
 plover less插件
 
 
+## 安装和使用
+
+```
+npm install --save plover-assets-less
+```
+
 [npm-image]: https://img.shields.io/npm/v/plover-assets-less.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/plover-assets-less
 [travis-image]: https://img.shields.io/travis/plover-modules/plover-assets-less/master.svg?style=flat-square
