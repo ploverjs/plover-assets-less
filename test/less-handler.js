@@ -76,9 +76,6 @@ describe('less-handler', function() {
     return co(function* () {
       const css = yield* compile('ignore-compatible.less');
       css.should.be.false();
-
-      const css2 = yield* compile('ignore-compatible2.less');
-      css2.should.be.false();
     });
   });
 
