@@ -1,6 +1,6 @@
 {
   "name": "plover-assets-less",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "plover plugin for compile less css",
   "main": "lib/index",
   "scripts": {
