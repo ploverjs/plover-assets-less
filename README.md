@@ -6,13 +6,31 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 
 
-plover less插件
+plover less插件，支持`@import`和`url()`对其他模块资源的引入。
 
 
-## 安装和使用
+## Installing
 
-```
+```sh
 npm install --save plover-assets-less
+```
+
+## Usage
+
+```css
+// 引入common模块的reset样式，所在模块目录为common/assets/css/reset.less
+@import 'common:reset';
+
+@border__color: #e8e8e8;
+
+.spliter {
+  border-right: 1px solid @border__color;
+}
+
+.icon__back {
+  // 引入common模块的back图片，所在模块目录为common/assets/img/icons/back.png
+  background-image: url('common:icons/back.png');
+}
 ```
 
 [npm-image]: https://img.shields.io/npm/v/plover-assets-less.svg?style=flat-square
