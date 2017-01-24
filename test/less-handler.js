@@ -29,14 +29,15 @@ describe('less-handler', function() {
     },
 
     settings: {
-      applicationRoot: root
+      applicationRoot: root,
+      assets: {
+        less: {
+          plugins: [new (require('less-plugin-functions'))()]
+        }
+      }
     },
 
-    buildConfig: {
-      less: {
-        compress: false
-      }
-    }
+    compile: true
   };
 
 
@@ -67,14 +68,6 @@ describe('less-handler', function() {
   it('should ignore compile with `@compile:false`', function() {
     return co(function* () {
       const css = yield* compile('ignore.less');
-      css.should.be.false();
-    });
-  });
-
-
-  it('compatible with old ignore style', function() {
-    return co(function* () {
-      const css = yield* compile('ignore-compatible.less');
       css.should.be.false();
     });
   });

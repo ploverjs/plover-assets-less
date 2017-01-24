@@ -15,11 +15,8 @@
     "lib"
   ],
   "dependencies": {
-    "less": "~2.7.0",
-    "less-plugin-functions": "0.0.2",
-    "plover-assets-util": "~1.4.0",
-    "plover-logger": "~1.4.0",
-    "get-annotation": "~1.1.0"
+    "get-annotation": "~1.1.0",
+    "plover-logger": "~1.4.0"
   },
   "devDependencies": {
     "co": "~4.6.0",
@@ -27,8 +24,13 @@
     "eslint": "~3.7.1",
     "eslint-config-bce": "~1.3.0",
     "istanbul": "~0.4.1",
+    "less": "^2.7.2",
+    "less-plugin-functions": "^0.0.2",
     "mocha": "~3.1.0",
     "should": "~11.1.0"
+  },
+  "peerDependencies": {
+    "less": "2.x"
   },
   "plover": {
     "plugin": "lib/plugin.js",
